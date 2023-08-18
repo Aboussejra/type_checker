@@ -20,7 +20,7 @@ def _find_type_origin(type_hint):
 
 def _check_types(func, parameters, hints):
     for name, value in parameters.items():
-        type_hint = hints.get(name, typing.Any)
+        type_hint = hints.get(name, object)
         actual_types = tuple(_find_type_origin(type_hint))
         if actual_types and not isinstance(value, actual_types):
             raise TypeError(

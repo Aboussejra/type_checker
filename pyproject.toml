@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "type-checker-decorators"
-version = "0.1.1"
+version = "0.1.3"
 description = ""
 authors = ["Aboussejra <Amir.Boussejra@viavisolutions.com>"]
 readme = "README.md"
